@@ -121,7 +121,7 @@ displayIngredients(drink){
                //Insert the results
                const resultsDiv = document.querySelector('#results');;
                resultsDiv.innerHTML = ``;
-               console.log('mirame aqui');
+               //console.log('mirame aqui');
                
                drinks.forEach(drink =>{
                resultsDiv.innerHTML +=`
@@ -150,7 +150,7 @@ displayIngredients(drink){
           //Set the values
           modalTitle.innerHTML = recipe.strDrink;
           ModalDescription.innerHTML = recipe.strInstructions;
-          console.log('try', this.displayIngredients(recipe));
+          //console.log('try', this.displayIngredients(recipe));
           modalIngredients.innerHTML = this.displayIngredients(recipe);
      }
 
@@ -195,15 +195,15 @@ displayIngredients(drink){
           const drinkss = new CocktailDB();
           const drinks = drinkss.getFromDB();
 
-          console.log('sisisi', drinkss);
+          //console.log('sisisi', drinkss);
           drinks.forEach(drink => {
                //destructuring the id
                let {id} = drink;
                //select the favorites
-               console.log('llega? a favoritos');
+               //console.log('llega? a favoritos');
                let favoriteDrink = document.querySelector(`[data-id="${id}"]`);
                if(favoriteDrink){
-               console.log(id);
+               //console.log(id);
                     favoriteDrink.classList.add('is-favorite');
                     favoriteDrink.textContent = '-';
                }

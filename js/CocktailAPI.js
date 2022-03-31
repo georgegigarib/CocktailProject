@@ -6,7 +6,7 @@ class CocktailAPI{
 
         const apiResponse = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${name}`);
         //return json response
-        console.log(apiResponse)
+        //console.log(apiResponse)
         const cocktails = await apiResponse.json();
             return {
                 cocktails
@@ -16,9 +16,9 @@ class CocktailAPI{
         //search by ingredient
         const apiResponse = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${ingredient}`);
         //return json response
-        console.log(apiResponse)
+        //console.log(apiResponse)
         const cocktails = await apiResponse.json();
-        console.log(cocktails);
+        //console.log(cocktails);
             return {
                 cocktails
             }
@@ -27,9 +27,9 @@ class CocktailAPI{
         //search by ingredient
         const apiResponse = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`);
         //return json response
-        console.log(apiResponse)
+        //console.log(apiResponse)
         const recipe = await apiResponse.json();
-        console.log(recipe);
+        //console.log(recipe);
             return {
                 recipe
             }
@@ -53,9 +53,9 @@ class CocktailAPI{
         //search by ingredient
         const apiResponse = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${category}`);
         //return json response
-        console.log(apiResponse)
+        //console.log(apiResponse)
         const recipe = await apiResponse.json();
-        console.log(recipe);
+        //console.log(recipe);
             return {
                 recipe
             }
@@ -64,9 +64,9 @@ class CocktailAPI{
         //search by ingredient
         const apiResponse = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=${term}`);
         //return json response
-        console.log(apiResponse)
+        //console.log(apiResponse)
         const recipe = await apiResponse.json();
-        console.log(recipe);
+        //console.log(recipe);
             return {
                 recipe
             }

@@ -5,12 +5,12 @@ saveIntoDB(drink){
 const drinks = this.getFromDB();
 drinks.push(drink);
 localStorage.setItem('drinks', JSON.stringify(drinks));
-console.log('LOG');
+//console.log('LOG');
 }
 
     //remove
     removeFromDB(id){
-            console.log('llega aqui');
+            //console.log('llega aqui');
             const drinks = this.getFromDB();
             drinks.forEach((drink, index) =>{
                 if(id === drink.id) {
@@ -21,7 +21,7 @@ console.log('LOG');
         }
 //return recipes from storage
     getFromDB(){
-        console.log('llega??????');
+        //console.log('llega??????');
         let drinks;
         //check from localstorage
 

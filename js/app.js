@@ -72,14 +72,14 @@ function resultsDelegation(e){
     if(e.target.classList.contains('get-recipe')){
        // getSingleRecipe()
        //console.log(e.target.getAttribute('data-id'));
-       console.log(e.target.dataset.id);
+       //console.log(e.target.dataset.id);
        cocktail.getSingleRecipe(e.target.dataset.id)
        .then(recipe =>{
            //display into modal
            ui.displaySingleRecipe(recipe.recipe.drinks[0]);
        })
     }else{
-        console.log('nono no hay receta')
+        console.log('Theres no recipe')
     }
 
     if(e.target.classList.contains('favorite-btn')){
