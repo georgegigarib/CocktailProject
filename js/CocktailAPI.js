@@ -4,7 +4,7 @@ class CocktailAPI{
     async getDrinkByName(name){
       
 
-        const apiResponse = await fetch(`http://www.thecocktaildb.com/api/json/v1/1/search.php?s=${name}`);
+        const apiResponse = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${name}`);
         //return json response
         console.log(apiResponse)
         const cocktails = await apiResponse.json();
@@ -14,7 +14,7 @@ class CocktailAPI{
     }
     async getDrinkByIngredient(ingredient){
         //search by ingredient
-        const apiResponse = await fetch(`http://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${ingredient}`);
+        const apiResponse = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${ingredient}`);
         //return json response
         console.log(apiResponse)
         const cocktails = await apiResponse.json();
@@ -25,7 +25,7 @@ class CocktailAPI{
     }
     async getSingleRecipe(id){
         //search by ingredient
-        const apiResponse = await fetch(`http://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`);
+        const apiResponse = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`);
         //return json response
         console.log(apiResponse)
         const recipe = await apiResponse.json();
